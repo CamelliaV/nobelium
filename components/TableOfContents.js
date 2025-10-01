@@ -15,8 +15,6 @@ export default function TableOfContents({ blockMap, className, style }) {
   ).value;
   const nodes = getPageTableOfContents(page, blockMap);
 
-  if (!nodes.length) return null;
-
   // Handle scroll progress tracking
   useEffect(() => {
     function handleScroll() {
@@ -31,6 +29,8 @@ export default function TableOfContents({ blockMap, className, style }) {
     handleScroll(); // initialize once
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  if (!nodes.length) return null;
 
   function scrollTo(id) {
     id = id.replaceAll("-", "");
