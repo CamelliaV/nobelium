@@ -20,8 +20,17 @@ const BLOG = {
   ogImageGenerateURL: "https://og-image-craigary.vercel.app", // The link to generate OG image, don't end with a slash
   socialLink: "https://github.com/CamelliaV",
   seo: {
-    keywords: ["Java", "前端", "AI", "Computer Vision", "Medical AI", "Blog", "Website", "Notion"],
-    googleSiteVerification: "", // Remove the value or replace it with your own google site verification code
+    keywords: [
+      "Java",
+      "前端",
+      "AI",
+      "Computer Vision",
+      "Medical AI",
+      "Blog",
+      "Website",
+      "Notion",
+    ],
+    googleSiteVerification: "VS4miateQHOJQMnFGNtMwNXK2CZJ0vaEhHjMwLwRRLQ", // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
