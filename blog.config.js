@@ -6,7 +6,7 @@ const BLOG = {
   description: "Java；前端；AI；",
   lang: "zh-CN", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: "Asia/Shanghai", // Your Notion posts' date will be interpreted as this timezone. See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
-  appearance: "auto", // ['light', 'dark', 'auto'],
+  appearance: "dark", // ['light', 'dark', 'auto'],
   font: "sans-serif", // ['sans-serif', 'serif']
   lightBackground: "#ffffff", // use hex value, don't forget '#' e.g #fffefc
   darkBackground: "#18181B", // use hex value, don't forget '#'
@@ -35,7 +35,7 @@ const BLOG = {
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
-    provider: "", // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
+    provider: "clarity", // Currently we support Google Analytics, Ackee, Clarity, please fill with 'ga', 'ackee' or 'clarity', leave it empty to disable it.
     ackeeConfig: {
       tracker: "", // e.g 'https://ackee.craigary.net/tracker.js'
       dataAckeeServer: "", // e.g https://ackee.craigary.net , don't end with a slash
@@ -44,10 +44,13 @@ const BLOG = {
     gaConfig: {
       measurementId: "", // e.g: G-XXXXXXXXXX
     },
+    clarityConfig: {
+      clarityId: "tiyegorg69",
+    },
   },
   comment: {
     // support provider: gitalk, utterances, cusdis
-    provider: "", // leave it empty if you don't need any comment plugin
+    provider: "utterances", // leave it empty if you don't need any comment plugin
     gitalkConfig: {
       repo: "", // The repository of store comments
       owner: "",
@@ -57,7 +60,7 @@ const BLOG = {
       distractionFreeMode: false,
     },
     utterancesConfig: {
-      repo: "",
+      repo: "CamelliaV/blog-public-comments",
     },
     cusdisConfig: {
       appId: "", // data-app-id
