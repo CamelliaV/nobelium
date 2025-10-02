@@ -19,7 +19,7 @@ export default {
         sans: FONTS_SANS,
         serif: FONTS_SERIF,
         noEmoji: [
-          '"IBM Plex Sans"',
+          // '"IBM Plex Sans"',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',

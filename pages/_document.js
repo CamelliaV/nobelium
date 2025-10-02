@@ -56,7 +56,7 @@ class MyDocument extends Document {
             </>
               )}
 
-          {['zh', 'ja', 'ko'].includes(
+          {/* {['zh', 'ja', 'ko'].includes(
             config.lang.slice(0, 2).toLocaleLowerCase()
           ) && (
             <>
@@ -87,7 +87,7 @@ class MyDocument extends Document {
                 />
               </noscript>
             </>
-          )}
+          )} */}
           <link rel="icon" href="/favicon.png" />
           <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed"></link>
           {config.appearance === 'auto'
