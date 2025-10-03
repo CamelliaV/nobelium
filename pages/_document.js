@@ -18,7 +18,7 @@ class MyDocument extends Document {
     return (
       <Html lang={config.lang} className={cn(initialColorScheme)}>
         <Head>
-          {config.font && config.font === 'serif'
+          {/* {config.font && config.font === 'serif'
             ? (
             <>
               <link
@@ -54,7 +54,7 @@ class MyDocument extends Document {
                 crossOrigin="anonymous"
               />
             </>
-              )}
+              )} */}
 
           {/* {['zh', 'ja', 'ko'].includes(
             config.lang.slice(0, 2).toLocaleLowerCase()
