@@ -28,7 +28,7 @@ const Scripts = () => {
           </Script>
         </>
       )}
-      {BLOG.analytics && BLOG.analytics.provider === "clarity" && (
+      {BLOG.analytics?.clarityConfig?.clarityId && (
         <Script
           strategy="lazyOnload"
           id="clarity"
